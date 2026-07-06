@@ -114,4 +114,4 @@ bash .../scripts/shutdown_nodes.sh --kill-launch
 
 ## Team
 
-let-them-theory
+Team of 4
