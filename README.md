@@ -3,15 +3,8 @@
 > 고객 공간과 로봇 작업 공간을 **물리적으로 분리한** 무인 픽앤플레이스 판매 시스템.
 > 손님은 진열대에 손대지 않고 주문만 하면, 로봇 팔이 상품을 집어 락커에 넣고 손님은 QR로 수령한다.
 
-<!-- ────────────────────────────────────────────────────────────
-     GIF 슬롯 ① — 히어로 데모 (README에서 가장 중요한 자리)
-     주문 → 로봇 피킹 → 락커 적재 → QR 수령까지 15~20초로 압축한 GIF 하나.
-     여기서 승부가 난다. 아래 마크다운으로 삽입:
-     ![SUDO demo](docs/media/demo_hero.gif)
-──────────────────────────────────────────────────────────── -->
 <p align="center">
-  <!-- <orderprocess.gif" width="720" alt="SUDO end-to-end demo"> -->
-  <em>▲ 여기에 전체 사이클 데모 GIF</em>
+  <img src="docs/media/orderprocess.gif" width="720" alt="SUDO end-to-end demo">
 </p>
 
 <p align="center">
@@ -41,9 +34,8 @@
 기존 무인매장의 세 가지 한계 — **개방형 진열**(도난·파손·위생), **수동 재고·진열**, **공간 효율 저하** — 는 모두 "고객이 상품 공간에 들어간다"는 전제에서 나온다.
 SUDO는 그 전제를 없앤다. 고객 공간과 로봇 작업 공간을 물리적으로 나눠, 손님은 주문만 하고 로봇이 채우는 **도심형 마이크로 풀필먼트 센터(MFC)** 구조다.
 
-<!-- 이미지 슬롯 — 공간 분리 컨셉 다이어그램 (발표자료 슬라이드 5) -->
 <p align="center">
-  <img src="docs/media/concept_space_separation.jpg" width="640" alt="고객 공간 / 로봇 작업 공간 분리">
+  <img src="docs/media/spaceseparation.png" width="640" alt="고객 공간 / 로봇 작업 공간 분리">
 </p>
 
 ---
@@ -57,7 +49,7 @@ SUDO는 그 전제를 없앤다. 고객 공간과 로봇 작업 공간을 물리
 
 | 인식 (YOLO + FastSAM) | 파지 & 낙하 감시 | 구역 자동 분류 |
 |:---:|:---:|:---:|
-| <!-- ![](docs/media/detect.gif) --> _detect.gif_ | <!-- ![](docs/media/grasp.gif) --> _grasp.gif_ | <!-- ![](docs/media/sort.gif) --> _sort.gif_ |
+| ![인식](docs/media/unknownobjectpicking.gif) | ![파지](docs/media/ultrasoundcheck.gif) | ![분류](docs/media/sortingvid.gif) |
 | RealSense 영상에서 상품/미학습 물체 검출 | 초음파 거리 기반 하강 + 파지 검증 | ROI 격자로 빈 칸 찾아 배치 |
 
 ---
@@ -88,9 +80,8 @@ SUDO는 그 전제를 없앤다. 고객 공간과 로봇 작업 공간을 물리
                             락커 배정 + QR ─▶ 손님 수령
 ```
 
-<!-- 이미지 슬롯 — 통합 실행 사이클 (발표자료 슬라이드 32): 한 주문이 네 파트를 모두 거치는 그림 -->
 <p align="center">
-  <img src="docs/media/integration_cycle.jpg" width="720" alt="Robot 실행 사이클: 인식→파지→분류→판단">
+  <img src="docs/media/systemcycle.png" width="720" alt="Robot 실행 사이클: 인식→파지→분류→판단">
 </p>
 
 ---
@@ -190,3 +181,12 @@ bash .../scripts/shutdown_nodes.sh --kill-launch
 - 다양한 형상 물체의 견고한 파지는 추가 연구 필요
 
 ---
+
+## 팀
+
+| 이름 | 담당 |
+|---|---|
+| 홍근영 (팀장) | 비전 & 멀티모달 & 하드웨어 설계 |
+| 박영우 | 그리퍼 제어 & 파지 시스템 설계 |
+| 황채현 | ROI & 자동 분류 시스템 설계 |
+| 전현욱 | Database & GUI 설계 |
