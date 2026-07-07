@@ -182,4 +182,4 @@ bash .../scripts/shutdown_nodes.sh --kill-launch
 
 ---
 ## Team
-<img src="docs/media/IMG_0548.jpeg"  width="100">
+<img src="docs/media/IMG_0548.jpeg"  width="300">
