@@ -181,3 +181,5 @@ bash .../scripts/shutdown_nodes.sh --kill-launch
 - 다양한 형상 물체의 견고한 파지는 추가 연구 필요
 
 ---
+##Team
+<img src="docs/media/IMG_0548.jpeg" width="400">
