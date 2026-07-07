@@ -10,7 +10,7 @@
      ![SUDO demo](docs/media/demo_hero.gif)
 ──────────────────────────────────────────────────────────── -->
 <p align="center">
-  <!-- <img orderprocess.gif" width="720" alt="SUDO end-to-end demo"> -->
+  <!-- <orderprocess.gif" width="720" alt="SUDO end-to-end demo"> -->
   <em>▲ 여기에 전체 사이클 데모 GIF</em>
 </p>
 
