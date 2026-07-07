@@ -111,7 +111,3 @@ bash .../scripts/shutdown_nodes.sh --kill-launch
 | `config/pick_place_params.yaml` | 초음파·place·슬롯·zone 파라미터 |
 
 ---
-
-## Team
-
-Team of 4
