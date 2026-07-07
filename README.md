@@ -22,8 +22,6 @@
 </p>
 
 ---
-![Top-down RViz view of the counter coverage path — green LEFT-half raster and blue RIGHT-half raster snaking around the sink cut-out](others/countertop_marker1.png)
-
 
 ## 목차
 1. [핵심 컨셉](#핵심-컨셉)
