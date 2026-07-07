@@ -4,7 +4,7 @@
 > 손님은 진열대에 손대지 않고 주문만 하면, 로봇 팔이 상품을 집어 락커에 넣고 손님은 QR로 수령한다.
 
 <p align="center">
-  <img src="docs/media/orderprocess.gif" width="720" alt="SUDO end-to-end demo">
+  <img src="docs/media/orderprocess.gif" width="400" alt="SUDO end-to-end demo">
 </p>
 
 <p align="center">
